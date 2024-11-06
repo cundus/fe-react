@@ -16,9 +16,9 @@ const darkTheme = createTheme({
 const App = () => {
    const dispatch = useAppDispatch();
 
-   React.useEffect(() => {
-      dispatch(checkAuth());
-   }, []);
+   // React.useEffect(() => {
+   //    dispatch(checkAuth());
+   // }, []);
 
    return (
       <ThemeProvider theme={darkTheme}>

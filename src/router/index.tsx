@@ -10,33 +10,38 @@ import Register from "@/pages/register";
 import Login from "@/pages/login";
 import AuthLayout from "@/layouts/auth-layout";
 import Detail from "@/pages/detail";
+import ChatPage from "@/pages/chat";
 
 const routes: RouteObject[] = [
+   // {
+   //    path: "/",
+   //    element: <RootLayout />,
+   //    children: [
+   //       {
+   //          index: true,
+   //          element: <Home />,
+   //       },
+   //       {
+   //          path: "search",
+   //          element: <>Search</>,
+   //       },
+   //       {
+   //          path: "follows",
+   //          element: <>Follows</>,
+   //       },
+   //       {
+   //          path: "profile",
+   //          element: <>Profile</>,
+   //       },
+   //       {
+   //          path: "thread/:id",
+   //          element: <Detail />,
+   //       },
+   //    ],
+   // },
    {
-      path: "/",
-      element: <RootLayout />,
-      children: [
-         {
-            index: true,
-            element: <Home />,
-         },
-         {
-            path: "search",
-            element: <>Search</>,
-         },
-         {
-            path: "follows",
-            element: <>Follows</>,
-         },
-         {
-            path: "profile",
-            element: <>Profile</>,
-         },
-         {
-            path: "thread/:id",
-            element: <Detail />,
-         },
-      ],
+      path: "/chat/:userId",
+      element: <ChatPage />,
    },
    {
       element: <AuthLayout />,
